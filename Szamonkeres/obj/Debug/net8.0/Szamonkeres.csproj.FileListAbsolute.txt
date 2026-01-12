@@ -128,3 +128,4 @@ C:\Users\Lempnerm\source\repos\Szamonkeres\Szamonkeres\obj\Debug\net8.0\refint\S
 C:\Users\Lempnerm\source\repos\Szamonkeres\Szamonkeres\obj\Debug\net8.0\Szamonkeres.pdb
 C:\Users\Lempnerm\source\repos\Szamonkeres\Szamonkeres\obj\Debug\net8.0\Szamonkeres.genruntimeconfig.cache
 C:\Users\Lempnerm\source\repos\Szamonkeres\Szamonkeres\obj\Debug\net8.0\ref\Szamonkeres.dll
+C:\Users\Lempnerm\source\repos\Szamonkeres\Szamonkeres\obj\Debug\net8.0\Szamonkeres.sourcelink.json

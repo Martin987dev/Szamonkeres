@@ -1,0 +1,32 @@
+[
+  {
+    "ContainingType": "Szamonkeres.Controllers.ActorsController",
+    "Method": "GetActorCount",
+    "RelativePath": "api/Actors/12.Feladat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Szamonkeres.Controllers.FilmtypesController",
+    "Method": "GetFilmTypesWithMovies",
+    "RelativePath": "api/Filmtypes/11.Feladat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Szamonkeres.Controllers.MoviesController",
+    "Method": "GetMovies",
+    "RelativePath": "api/Movies/10.Feladat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

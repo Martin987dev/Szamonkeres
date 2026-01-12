@@ -1,0 +1,46 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Szamonkeres",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Actors/12.Feladat": {
+      "get": {
+        "tags": [
+          "Actors"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Filmtypes/11.Feladat": {
+      "get": {
+        "tags": [
+          "Filmtypes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Movies/10.Feladat": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using Szamonkeres.Models;
 using System.Text.Json.Serialization;
 
 namespace Szamonkeres
@@ -8,17 +10,21 @@ namespace Szamonkeres
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Controllers + JSON
+            builder.Services
+                .AddControllers()
+                .AddJsonOptions(x =>
+                    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            // DbContext
+            builder.Services.AddDbContext<Models.CinemadbContext>();
+
+            // Swagger
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -26,12 +32,8 @@ namespace Szamonkeres
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }
